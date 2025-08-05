@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Beds</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navBar">
+        <div class="navBarContent">
+        <h1 class="companyName">Angel Beds</h1>
+        <div class="middleNav">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <ul>
+                <li class="searchContents">
+                    <form action="catalog.html" method="get">
+                        <input type="text" placeholder="Search" class="searchBar">
+                        <button type="submit" class="searchButton">
+                            <img src="images/png/001-magnifying-glass.png" alt="">
+                        </button>
+                    </form>
+                </li>
+                <li class="cartDropdown">
+                    <button class="cartButton" onclick="toggleCartDropdown()">
+                            <img src="images/png/004-shopping-cart.png" class="icon">
+                            <span class="cartCount">0</span>
+                    </button>
+                    <div class="cartContent">
+                        <ul class="cartItems"></ul>
+                        <div class="cartSummary">
+                            <p>Total: $<span class="cartTotalPrice">0.00</span></p>
+                            <button onclick="checkout()">Checkout</button>
+                            <button onclick="clearCart()">Clear Cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="profileDropdown">
+                    <button class="profileButton" onclick="toggleProfileDropdown()">
+                        <img src="images/png/009-user.png" alt="profile icon" class="icon" id="profileIcon">
+                        <span id="userGreeting"></span>
+                    </button>
+                    <div class="profileContent">
+                        <a href="#">Profile</a>
+                        <a href="#">Favorites</a>
+                        <a href="#">Settings</a>
+                        <a href="login.html">Log In</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <section class="shopNow">
+        <div class="shopTextContent">
+            <p class="shopNowText">
+                Sleep In Comfort And Style With Beds From Our Exquisite Collection<br>
+                <span>Discover a safe haven curated to your needs and desires by exploring our collection</span>
+            </p>
+            <button class="shopNowButton" onclick="toCatalog()">Shop Now</button>
+        </div>
+        <img src="images/shop-now-bedroom.png" alt="" class="shopNowImg">
+    </section>
+
+    <footer>
+        <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><br>
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/frey-wazza" title="Frey Wazza">Frey Wazza</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><br>
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/taufik" title="Taufik">Taufik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><br>
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/noomtah" title="noomtah">noomtah</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><br>
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/najmunnahar" title="NajmunNahar">NajmunNahar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><br>
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/redempticon" title="redempticon">redempticon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><br>
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/komar-dews" title="Komar Dews">Komar Dews</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+        <!-- <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Gregor Cresnar - Flaticon</a> -->
+
+        <!-- <a href="https://www.flaticon.com/free-icons/eye" title="eye icons">Eye icons created by Kiranshastry - Flaticon</a> -->
+    </footer>
+</body>
+<script src="javascript.js"></script>
+</html>

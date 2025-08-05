@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navBar">
+        <div class="navBarContent">
+        <h1 class="companyName">Angel Beds</h1>
+        <div class="middleNav">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <ul>
+                <li class="searchContents">
+                    <form action="catalog.html" method="get">
+                        <input type="text" placeholder="Search" class="searchBar">
+                        <button type="submit" class="searchButton">
+                            <img src="images/png/001-magnifying-glass.png" alt="">
+                        </button>
+                    </form>
+                </li>
+                <li class="cartDropdown">
+                    <button class="cartButton" onclick="toggleCartDropdown()">
+                            <img src="images/png/004-shopping-cart.png" class="icon">
+                            <span class="cartCount">0</span>
+                    </button>
+                    <div class="cartContent">
+                        <ul class="cartItems"></ul>
+                        <div class="cartSummary">
+                            <p>Total: $<span class="cartTotalPrice">0.00</span></p>
+                            <button onclick="checkout()">Checkout</button>
+                            <button onclick="clearCart()">Clear Cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="profileDropdown">
+                    <button class="profileButton" onclick="toggleProfileDropdown()">
+                        <img src="images/png/009-user.png" alt="profile icon" class="icon">
+                    </button>
+                    <div class="profileContent">
+                        <a href="#">Profile</a>
+                        <a href="#">Favorites</a>
+                        <a href="#">Settings</a>
+                        <a href="login.html">Log In</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <section class="offeredItems">
+        <ul class="bedEssentials">
+            <li><button class="filterButton active" data-category="all">All</button></li>
+            <li><button class="filterButton" data-category="mattress">Mattress</button></li>
+            <li><button class="filterButton" data-category="frames">Frames</button></li>
+            <li><button class="filterButton" data-category="pillows">Pillows</button></li>
+        </ul>
+
+        <div class="catalog">
+            <div class="catalogItem" data-category="mattress">Memory Foam Mattress</div>
+            <div class="catalogItem" data-category="frames">Mahogany Bed Frame</div>
+            <div class="catalogItem" data-category="pillows">Bamboo Pillow</div>
+            <div class="catalogItem" data-category="mattress">
+                <img src="images/innerspring-mattress.png" alt="" class="productImage">
+
+                <div class="cardSidebar">
+                    <button class="cardAction">
+                        <img src="images/png/004-shopping-cart.png" alt="" class="cardActionIcon">
+                    </button>
+                    <button class="cardAction">
+                        <img src="images/heart.png" alt="" class="cardActionIcon">
+                    </button>
+                    <button class="cardAction">
+                        <img src="images/view.png" alt="" class="cardActionIcon">
+                    </button>
+                </div>
+
+                <div class="productPrice">$200.00</div>
+                <div class="productRatingBadge">&#9733; 4.5</div>
+
+
+                <div class="productTitle">Innerspring Mattress</div>
+
+                <div class="productRating">
+                    <span class="star" data-value="1">&#9733</span>
+                    <span class="star" data-value="2">&#9733</span>
+                    <span class="star" data-value="3">&#9733</span>
+                    <span class="star" data-value="4">&#9733</span>
+                    <span class="star" data-value="5">&#9733</span>
+                </div>  
+            </div>
+            
+            <div class="catalogItem" data-category="frames">Metal Frame</div>
+            <div class="catalogItem" data-category="mattress">Latex Mattress</div>
+            <div class="catalogItem" data-category="mattress">Hybrid Mattress</div>
+            <div class="catalogItem" data-category="mattress">Gel Mattress</div>
+            <div class="catalogItem" data-category="mattress">Air Mattress</div>
+
+        </div>
+    </section>
+    <div id="cartAlert">Added To Cart!</div>
+<script src="javascript.js"></script>
+</body>
+
+</html>

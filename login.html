@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+     <div class="login-container">
+        <form class="login-form">
+            <h1>Login</h1>
+            <div class="username">
+                <input type="text" id="username">
+                <label for="">Username</label>
+            </div>
+            
+            <div class="password">
+                <input type="password" id="password">
+                <label for="">Password</label>
+            </div>
+
+            <div class="forgot-password">
+                <label for=""><input type="checkbox" id="remember-me">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-button" onclick="loginValidation()">Login</button>
+            <div class="register">
+                <p>Don't have an account? <a href="signup.html">Sign-Up</a></p>
+            </div>
+        </form>
+        <p id="errorMessage"></p>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>

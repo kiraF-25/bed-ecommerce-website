@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav class="navBar">
+        <div class="navBarContent">
+        <h1 class="companyName">Angel Beds</h1>
+        <div class="middleNav">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <ul>
+                <li class="searchContents">
+                    <form action="catalog.html" method="get">
+                        <input type="text" placeholder="Search" class="searchBar">
+                        <button type="submit" class="searchButton">
+                            <img src="images/png/001-magnifying-glass.png" alt="">
+                        </button>
+                    </form>
+                </li>
+                <li class="cartDropdown">
+                    <button class="cartButton" onclick="toggleCartDropdown()">
+                            <img src="images/png/004-shopping-cart.png" class="icon">
+                            <span class="cartCount">0</span>
+                    </button>
+                    <div class="cartContent">
+                        <ul class="cartItems"></ul>
+                        <div class="cartSummary">
+                            <p>Total: $<span class="cartTotalPrice">0.00</span></p>
+                            <button onclick="checkout()">Checkout</button>
+                            <button onclick="clearCart()">Clear Cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="profileDropdown">
+                    <button class="profileButton" onclick="toggleProfileDropdown()">
+                        <img src="images/png/009-user.png" alt="profile icon" class="icon" id="profileIcon">
+                        <span id="userGreeting"></span>
+                    </button>
+                    <div class="profileContent">
+                        <a href="#">Profile</a>
+                        <a href="#">Favorites</a>
+                        <a href="#">Settings</a>
+                        <a href="login.html">Log In</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+   <div class="formChooser">
+    <div class="unfamiliarUser">
+        <div class="content">
+            <img src="images/unfamiliar-user.png" alt="Confused Man" class="character">
+            <h2>Not sure how this works?</h2>
+            <button>Guide Me Through</button>
+        </div>
+    </div>
+
+    <div class="familiarUser">
+        <div class="content">
+            <img src="images/familiar-user.png" alt="Confident Woman" class="character">
+            <h2>I'm familiar with contact forms</h2>
+            <button>To The Form</button>
+        </div>
+    </div>
+   </div>
+   <script src="javascript.js"></script>
+</body>
+</html>
